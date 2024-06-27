@@ -63,8 +63,14 @@ Questions discuss during the week:
 <!-- Update this section as you make progress, describing of what you have ACTUALLY DONE.
      If there are specific steps that you could not complete then you can describe them here, too. -->
 
+1. Coding
+  1. Fixed old issues thanks to Slicer experts
+    * Fix error reported by colcon re. package name didn't follow snake case convention, build tree is now `slicer_ros2_module` but package is `ROS2` for Slicer
+    * Fix Qt timer issue, i.e. it was implemented in qLogicWidget and therefore would also start spinning the ROS node only when the widget was manually loaded.  It has been moved to the top qLogic class and now starts automatically when Slicer is launched
+  1. Wrap up integration of code generation from Aravind
+    * 
 
-1. Describe specific steps you **have actually done**.
+
 
 
 
